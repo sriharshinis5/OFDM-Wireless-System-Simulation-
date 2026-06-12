@@ -1,44 +1,48 @@
 # OFDM Wireless System Simulation
 
-## Overview
+## Project Overview
 
-This project implements an Orthogonal Frequency Division Multiplexing (OFDM) wireless communication system using MATLAB/Octave. The simulation evaluates Bit Error Rate (BER) performance under varying Signal-to-Noise Ratio (SNR) conditions.
+This project implements an Orthogonal Frequency Division Multiplexing (OFDM) wireless communication system using MATLAB/Octave. The simulator evaluates Bit Error Rate (BER) performance under different Signal-to-Noise Ratio (SNR) conditions and demonstrates core concepts used in LTE and 5G physical layer communication systems.
 
 ## Features
 
 * Random Bit Generation
-* QPSK Modulation
+* QPSK Modulation/Demodulation
 * OFDM Transmission using IFFT
 * Cyclic Prefix Insertion and Removal
 * AWGN Channel Modeling
-* FFT-based Receiver
-* BER Performance Analysis
+* FFT-Based Receiver Processing
+* BER Performance Evaluation
 
-## System Architecture
+## Communication Chain
 
-Random Bits → QPSK Modulator → OFDM Modulator → AWGN Channel → OFDM Demodulator → QPSK Demodulator → BER Calculation
+Random Bits → QPSK → IFFT → Cyclic Prefix → AWGN Channel → Remove CP → FFT → QPSK Demodulation → BER Calculation
 
-## Technologies Used
+## Technologies
 
 * MATLAB
 * GNU Octave
 * Digital Signal Processing
 * Wireless Communication
 
+## Results
+
+The simulation demonstrates that BER decreases as SNR increases, validating the robustness of OFDM transmission in noisy wireless environments.
+
 ## Applications
 
-* 4G LTE
-* 5G NR
-* Broadband Wireless Systems
+* LTE Networks
+* 5G NR Systems
 * Software Defined Radio
+* Wireless PHY Layer Research
 
 ## Future Enhancements
 
-* MIMO-OFDM
 * Rayleigh Fading Channel
-* 16-QAM Support
-* Channel Estimation
-* 5G Physical Layer Extensions
+* MIMO-OFDM
+* 16-QAM and 64-QAM Modulation
+* Channel Estimation Techniques
+* 5G Link-Level Simulation
 
 ## Author
 
